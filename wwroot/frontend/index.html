@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon2.png"><meta name="generator" content="Astro v4.16.8"><title>Gestor de contraseñas</title><style>:root{--accent: 136, 58, 234;--accent-light: 224, 204, 250;--accent-dark: 49, 10, 101;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60% )}html{font-family:system-ui,sans-serif;background:#000}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}[data-astro-cid-u6jhahkh]{margin:0;padding:0;box-sizing:0}.containerData[data-astro-cid-u6jhahkh]{background-color:#202020;border-radius:15px;width:auto;padding:1.5rem;overflow:hidden}p[data-astro-cid-u6jhahkh]{flex:0 0 calc(25% - 10px);margin:.5rem;box-sizing:border-box;border-radius:10px;padding:.2rem;color:#e22b2b;font-weight:bolder;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}p[data-astro-cid-u6jhahkh] span[data-astro-cid-u6jhahkh]{color:#fff;font-weight:100}.StyleBottom[data-astro-cid-u6jhahkh]{display:flex;text-align:center;justify-content:space-between;margin-top:.5rem}button[data-astro-cid-u6jhahkh]{padding:.7rem;border-radius:10px;border:0;cursor:pointer}.StyleContainer[data-astro-cid-u6jhahkh]{background-color:#035;border-radius:10px;padding:.6rem}.styleContainerMain[data-astro-cid-u6jhahkh]{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%}main[data-astro-cid-j7pv25f6]{margin:auto;padding:1rem;width:90%;color:#fff}h1[data-astro-cid-j7pv25f6]{font-size:4rem;font-weight:700;line-height:1;text-align:center;margin-bottom:1em}.newButton[data-astro-cid-j7pv25f6]{padding:.7rem;border-radius:10px;border:0;background-color:#25cc78f8;cursor:pointer}
+</style><script type="module">document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("fecha-creacion"),n=new Date(e.textContent).toLocaleString();e.textContent=n;const t=document.getElementById("fecha-update"),o=new Date(t.textContent).toLocaleString();t.textContent=o});document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".buttonDelete").forEach(n=>{n.addEventListener("click",async()=>{const t=n.getAttribute("data-id");await a(Number(t))})})});const a=async e=>{const t=await fetch(`http://localhost:5071/api/PasswordEntries/${e}`,{method:"DELETE"});if(t.ok){const o=await t.json();console.log(o.message)}else console.error("Error al eliminar el item")};
+</script></head> <body>  <main data-astro-cid-j7pv25f6> <!-- <Login></Login> --> <h1 data-astro-cid-j7pv25f6>PASSWORD ENCRYP</h1> <div style="display:flex; flex-direction: row; justify-content: space-between; padding-bottom: .9rem;" data-astro-cid-j7pv25f6> <h3 style="margin: 0;" data-astro-cid-j7pv25f6>LIST</h3> <a href="/addElement" data-astro-cid-j7pv25f6> <button class="newButton" data-astro-cid-j7pv25f6>Nuevo</button> <button class="newButton" data-astro-cid-j7pv25f6>Exportar</button> </a> </div> <div class="styleContainerMain" data-astro-cid-u6jhahkh> <div class="containerData" data-astro-cid-u6jhahkh> <div class="StyleContainer" data-astro-cid-u6jhahkh> <p data-astro-cid-u6jhahkh>
+Sitio: <span data-astro-cid-u6jhahkh>FASDF</span> </p> <p data-astro-cid-u6jhahkh>
+User: <span data-astro-cid-u6jhahkh>FDASF</span> </p> <p data-astro-cid-u6jhahkh>
+Password: <span data-astro-cid-u6jhahkh>pPe4r/71unnsJIdscOjhrg==</span> </p> <p data-astro-cid-u6jhahkh>
+Url: <span data-astro-cid-u6jhahkh>http://localjost.com</span> </p> <p data-astro-cid-u6jhahkh>
+Nota: <span data-astro-cid-u6jhahkh>jfladsjfladsjfaldjflkdj jfldjflasjfjoiqwjefojwfjdljfldjflkajfdkjfldjfdjf  jfdljfldjf aljfdljfljqoiuopjojmllmfdkmfkdfdjfjjjdkjafldjfldjf j ajsldjfl daedsfad df fdasfdsfdfasffcdsadfsdf</span> </p> <p data-astro-cid-u6jhahkh>
+Creado: <span id="fecha-creacion" data-astro-cid-u6jhahkh>2024-11-10T03:46:36.953</span> </p> <p data-astro-cid-u6jhahkh>
+Actualizado: <span id="fecha-update" data-astro-cid-u6jhahkh>2024-11-10T03:46:36.953</span> </p> <p data-astro-cid-u6jhahkh>
+Estatus: <span data-astro-cid-u6jhahkh>dsfa</span> </p> </div> <div class="StyleBottom" data-astro-cid-u6jhahkh> <button style="background-color: rgb(212, 10, 10); color:white" class="buttonDelete" data-id="1" data-astro-cid-u6jhahkh>
+Eliminar
+</button> <a href="/update/1" data-astro-cid-u6jhahkh> <button style="background-color: rgba(37, 204, 120, 0.973); color:black" class="updateButton" data-id="1" data-astro-cid-u6jhahkh>
+Actualizar
+</button> </a> </div> </div><div class="containerData" data-astro-cid-u6jhahkh> <div class="StyleContainer" data-astro-cid-u6jhahkh> <p data-astro-cid-u6jhahkh>
+Sitio: <span data-astro-cid-u6jhahkh>vd</span> </p> <p data-astro-cid-u6jhahkh>
+User: <span data-astro-cid-u6jhahkh>fads</span> </p> <p data-astro-cid-u6jhahkh>
+Password: <span data-astro-cid-u6jhahkh>Y/oMunTuVBZRIzk20e933Q==</span> </p> <p data-astro-cid-u6jhahkh>
+Url: <span data-astro-cid-u6jhahkh>https://youtube.com</span> </p> <p data-astro-cid-u6jhahkh>
+Nota: <span data-astro-cid-u6jhahkh>fadsf</span> </p> <p data-astro-cid-u6jhahkh>
+Creado: <span id="fecha-creacion" data-astro-cid-u6jhahkh>2024-11-10T04:53:28.586</span> </p> <p data-astro-cid-u6jhahkh>
+Actualizado: <span id="fecha-update" data-astro-cid-u6jhahkh>2024-11-10T04:53:28.586</span> </p> <p data-astro-cid-u6jhahkh>
+Estatus: <span data-astro-cid-u6jhahkh>seguro</span> </p> </div> <div class="StyleBottom" data-astro-cid-u6jhahkh> <button style="background-color: rgb(212, 10, 10); color:white" class="buttonDelete" data-id="2" data-astro-cid-u6jhahkh>
+Eliminar
+</button> <a href="/update/2" data-astro-cid-u6jhahkh> <button style="background-color: rgba(37, 204, 120, 0.973); color:black" class="updateButton" data-id="2" data-astro-cid-u6jhahkh>
+Actualizar
+</button> </a> </div> </div><div class="containerData" data-astro-cid-u6jhahkh> <div class="StyleContainer" data-astro-cid-u6jhahkh> <p data-astro-cid-u6jhahkh>
+Sitio: <span data-astro-cid-u6jhahkh>gjhgkj</span> </p> <p data-astro-cid-u6jhahkh>
+User: <span data-astro-cid-u6jhahkh>vxeque</span> </p> <p data-astro-cid-u6jhahkh>
+Password: <span data-astro-cid-u6jhahkh>kAFzgwMFbfz7gUOFl0uwkFTwVlZR0zm2kqO/NXB6158=</span> </p> <p data-astro-cid-u6jhahkh>
+Url: <span data-astro-cid-u6jhahkh>http://localjost.com</span> </p> <p data-astro-cid-u6jhahkh>
+Nota: <span data-astro-cid-u6jhahkh>fgsdfg</span> </p> <p data-astro-cid-u6jhahkh>
+Creado: <span id="fecha-creacion" data-astro-cid-u6jhahkh>2024-11-10T04:54:05.299</span> </p> <p data-astro-cid-u6jhahkh>
+Actualizado: <span id="fecha-update" data-astro-cid-u6jhahkh>2024-11-10T04:54:05.299</span> </p> <p data-astro-cid-u6jhahkh>
+Estatus: <span data-astro-cid-u6jhahkh>dsfa</span> </p> </div> <div class="StyleBottom" data-astro-cid-u6jhahkh> <button style="background-color: rgb(212, 10, 10); color:white" class="buttonDelete" data-id="3" data-astro-cid-u6jhahkh>
+Eliminar
+</button> <a href="/update/3" data-astro-cid-u6jhahkh> <button style="background-color: rgba(37, 204, 120, 0.973); color:black" class="updateButton" data-id="3" data-astro-cid-u6jhahkh>
+Actualizar
+</button> </a> </div> </div><div class="containerData" data-astro-cid-u6jhahkh> <div class="StyleContainer" data-astro-cid-u6jhahkh> <p data-astro-cid-u6jhahkh>
+Sitio: <span data-astro-cid-u6jhahkh>FASDF</span> </p> <p data-astro-cid-u6jhahkh>
+User: <span data-astro-cid-u6jhahkh>FDASF</span> </p> <p data-astro-cid-u6jhahkh>
+Password: <span data-astro-cid-u6jhahkh>pPe4r/71unnsJIdscOjhrg==</span> </p> <p data-astro-cid-u6jhahkh>
+Url: <span data-astro-cid-u6jhahkh>https://youtube.com</span> </p> <p data-astro-cid-u6jhahkh>
+Nota: <span data-astro-cid-u6jhahkh>dfasd</span> </p> <p data-astro-cid-u6jhahkh>
+Creado: <span id="fecha-creacion" data-astro-cid-u6jhahkh>2024-11-10T05:00:03.488</span> </p> <p data-astro-cid-u6jhahkh>
+Actualizado: <span id="fecha-update" data-astro-cid-u6jhahkh>2024-11-10T05:00:03.488</span> </p> <p data-astro-cid-u6jhahkh>
+Estatus: <span data-astro-cid-u6jhahkh>seguro</span> </p> </div> <div class="StyleBottom" data-astro-cid-u6jhahkh> <button style="background-color: rgb(212, 10, 10); color:white" class="buttonDelete" data-id="4" data-astro-cid-u6jhahkh>
+Eliminar
+</button> <a href="/update/4" data-astro-cid-u6jhahkh> <button style="background-color: rgba(37, 204, 120, 0.973); color:black" class="updateButton" data-id="4" data-astro-cid-u6jhahkh>
+Actualizar
+</button> </a> </div> </div> </div>   </main>  </body></html> 
