@@ -1,0 +1,16 @@
+n
+cD:\Sources\passwordBackendCsharp\PasswordEncript\obj\Debug\net8.0\passwordManagent2.AssemblyInfo.csutf-8{
+pD:\Sources\passwordBackendCsharp\PasswordEncript\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8Å
+vD:\Sources\passwordBackendCsharp\PasswordEncript\obj\Debug\net8.0\passwordManagent2.MvcApplicationPartsAssemblyInfo.csutf-8p
+eD:\Sources\passwordBackendCsharp\PasswordEncript\obj\Debug\net8.0\passwordManagent2.GlobalUsings.g.csutf-8L
+CD:\Sources\passwordBackendCsharp\PasswordEncript\WeatherForecast.csutf-8X
+OD:\Sources\passwordBackendCsharp\PasswordEncript\services\encryptionPassword.csutf-8D
+;D:\Sources\passwordBackendCsharp\PasswordEncript\Program.csutf-8U
+LD:\Sources\passwordBackendCsharp\PasswordEncript\PasswordServiceBenchmark.csutf-8Z
+QD:\Sources\passwordBackendCsharp\PasswordEncript\Models\PasswordManagerContext.csutf-8Q
+HD:\Sources\passwordBackendCsharp\PasswordEncript\Models\passwordEntry.csutf-8m
+bD:\Sources\passwordBackendCsharp\PasswordEncript\Migrations\PasswordManagerContextModelSnapshot.csutf-8o
+dD:\Sources\passwordBackendCsharp\PasswordEncript\Migrations\20241110013007_InitialCreate.Designer.csutf-8d
+[D:\Sources\passwordBackendCsharp\PasswordEncript\Migrations\20241110013007_InitialCreate.csutf-8b
+YD:\Sources\passwordBackendCsharp\PasswordEncript\Controllers\PasswordEntriesController.csutf-8Q
+HD:\Sources\passwordBackendCsharp\PasswordEncript\Benchmarks\Benchmark.csutf-8
